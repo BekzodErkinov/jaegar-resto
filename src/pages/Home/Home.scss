@@ -1,0 +1,11 @@
+.home-page {
+  display: grid;
+  grid-template-columns: 1fr 409px;
+  grid-template-rows: auto;
+  min-height: 100vh;
+
+  .home-main {
+    min-height: 100vh;
+    margin: 24px 24px 0;
+  }
+}

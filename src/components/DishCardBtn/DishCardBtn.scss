@@ -1,0 +1,28 @@
+.dish-card-btn {
+  width: 192px;
+  min-height: 226px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin: 0 14px 64px;
+  padding: 0 24px 24px;
+  background: #1F1D2B;
+  border-radius: 16px;
+  .food-img {
+    margin-top: -40px;
+    margin-bottom: 16px;
+  }
+  .title {
+    font-size: 17px;
+  }
+  .cost {
+    margin: 8px 0 4px;
+    font-size: 15px;
+  }
+  .available {
+    font-size: 15px;
+    color: #abbbc2;
+  }
+}

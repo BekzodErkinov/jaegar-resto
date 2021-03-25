@@ -1,0 +1,19 @@
+-src
+  |─assets
+  |  |-Icons
+  |  |-Images
+  |  └─styles
+  |─components
+  |   |-
+  |   |-
+  |   └─
+  |-containers
+  |   |-
+  |   └─
+  |-pages
+  |   |-
+  |   └─
+  |
+  |
+  |-App.js
+  └─index.js

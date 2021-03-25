@@ -1,0 +1,31 @@
+.dishes-holder {
+  .choose-dish {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .dishes-select {
+      width: 100px;
+      color: #fff;
+      padding: 14px;
+      background: #1F1D2B;
+      border: 1px solid #393C49;
+      border-radius: 8px;
+    }
+  }
+  .dishes-list {
+    max-height: 580px;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    padding-top: 41px;
+    margin-top: 30px;
+    &::-webkit-scrollbar {
+      width: 0 !important;
+      height: 0;
+      display: none !important;
+      background: transparent;
+    }
+  }
+}

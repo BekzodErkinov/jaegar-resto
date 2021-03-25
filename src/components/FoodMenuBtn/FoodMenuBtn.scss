@@ -1,0 +1,18 @@
+.food-menu-btn {
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px 15px 15px;
+  margin: 0 30px -2px 0;
+  border-bottom: 3px solid transparent;
+  outline: 1px solid transparent;
+  transition: all 0.3s ease;
+
+  &:hover, &.active {
+    color: #ea7c69;
+    border-bottom-color: #ea7c69;
+  }
+  &:focus-visible {
+    outline-color: #fff;
+  }
+}

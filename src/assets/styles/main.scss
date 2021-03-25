@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after { box-sizing: inherit; }
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background: #252836;
+  color: #fff;
+  letter-spacing: 0.3px;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  font-family: 'Barlow', sans-serif;
+  background: transparent;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 104px 1fr;
+  grid-template-rows: 1fr;
+  gap: 0;
+  grid-template-areas: ". .";
+}

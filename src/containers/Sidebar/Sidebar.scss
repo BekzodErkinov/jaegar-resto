@@ -1,0 +1,24 @@
+.sidebar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+
+  padding: 24px 0 24px 12px;
+  color: #fff;
+  background: #1F1D2B;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+
+  .logo-holder {
+    padding: 11px;
+    border-radius: 12px;
+    margin-right: 13px;
+    background: rgba(235, 150, 106, 0.26);
+  }
+
+  .register {
+    margin-top: auto;
+  }
+}

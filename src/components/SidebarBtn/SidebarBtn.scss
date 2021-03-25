@@ -1,0 +1,46 @@
+.sidebar-btn-holder {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 26px;
+  padding: 13px 25px 11px 12px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  &:hover, &.active {
+    .sidebar-btn {
+      background: rgba(234, 124, 105, 1);
+      box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.32);
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+  &.active {
+    background: #252836;
+    &::before, &::after{
+      position: absolute;
+      top: -15px;
+      right: -1px;
+      display: block;
+      content: url('../../assets/Images/sidebar-active-style.svg');
+    }
+    &::after {
+      transform: rotateY(180deg) rotateZ(180deg);
+      bottom: -15px;
+    }
+  }
+
+  .sidebar-btn {
+    padding: 18px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    svg {
+      height: 20px;
+      width: 19px;
+      display: block;
+      fill: #EA7C69;
+    }
+  }
+}
