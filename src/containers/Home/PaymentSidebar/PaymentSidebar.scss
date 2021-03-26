@@ -1,11 +1,117 @@
 .payment-sidebar {
   padding: 24px;
-  .cancel-btn {
-    width: 100%;
-    color: #EA7C69;
-    padding: 14px;
-    border: 1px solid #EA7C69;
-    box-sizing: border-box;
-    border-radius: 8px;
+  #payment-form {
+    .payment-head {
+      margin-top: 20px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #393C49;
+      .title {
+        font-size: 28px;
+      }
+      .subtitle {
+        color: #ABBBC2;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 8px;
+      }
+    }
+    .payment-main {
+      .form-title {
+        font-size: 20px;
+        margin: 22px 0 16px;
+      }
+      .payment-method {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        .payment-card-label {
+          position: relative;
+          width: 181px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          padding: 10px;
+          margin-right: 8px;
+          border-radius: 8px;
+          background: #1f1d2b;
+          border: 1px solid #393C49;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          &:hover {
+            background: #252836;
+            svg {
+              fill: #fff;
+            }
+            h4 {
+              color: #fff;
+            }
+          }
+
+          svg {
+            fill: #ABBBC2;
+            width: 24px;
+            height: 24px;
+          }
+          h4 {
+            color: #ABBBC2;
+            font-size: 14px;
+            margin-top: 2px;
+          }
+          input {
+            // visibility: hidden;
+            cursor: pointer;
+            position: absolute;
+            top: 5px;
+            left: 91px;
+            right: 0;
+            bottom: 0;
+          }
+          input:checked + svg {
+            fill: #fff;
+          }
+          input:checked + h4 {
+            color: #fff;
+          }
+        }
+        .paypal {
+          svg {
+            fill: none;
+            stroke: #ABBBC2;
+          }
+          input:checked + svg {
+            stroke: #fff;
+          }
+        }
+      }
+      .payment-label {
+        display: flex;
+        flex-direction: column;
+        margin: 16px 0;
+        input {
+          padding: 14px;
+          margin-top: 8px;
+          border-radius: 8px;
+          color: #fff;
+          background: #2D303E;
+          border: 1px solid #393C49;
+          &::placeholder {
+            color: #ABBBC2;
+          }
+        }
+      }
+    }
+    .payment-foot {
+      .buttons {
+        .cancel-btn {
+          width: 100%;
+          color: #EA7C69;
+          padding: 14px;
+          border: 1px solid #EA7C69;
+          box-sizing: border-box;
+          border-radius: 8px;
+        }
+      }
+    }
   }
 }

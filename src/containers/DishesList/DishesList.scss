@@ -13,14 +13,14 @@
     }
   }
   .dishes-list {
-    max-height: 580px;
+    max-height: 598px;
     overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: center;
-    padding-top: 41px;
-    margin-top: 30px;
+    padding-top: 55px;
+    margin-top: 12px;
     &::-webkit-scrollbar {
       width: 0 !important;
       height: 0;

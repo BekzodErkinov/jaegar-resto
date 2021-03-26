@@ -1,9 +1,7 @@
 // SCSS
 import './DishCardBtn.scss'
 
-const DishCardBtn = (props) => {
-  const { id, foodImg, cost, title, available } = props
-
+const DishCardBtn = ({ id, foodImg, cost, title, available }) => {
   return (
     <button className="dish-card-btn" id={id}>
       <img height="132" width="132" className="food-img" src={foodImg} alt={title} />

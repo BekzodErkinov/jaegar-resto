@@ -1,0 +1,88 @@
+.order-dish {
+  margin: 25px 0;
+  .dish-head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .dish-img {
+      width: 45px;
+      height: 41px;
+      margin-right: 5px;
+    }
+    .dish-caption {
+      .title {
+        width: 140px;
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .cost {
+        font-size: 12px;
+        color: #ABBBC2;
+      }
+    }
+    .count-input {
+      width: 45px;
+      height: 45px;
+      padding: 5px;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 8px;
+      color: #fff;
+      background: #2D303E;
+      border: 1px solid #393C49;
+      margin: 0 21px 0 61px;
+      outline: none;
+      &:hover, &:focus {
+        border-color: #ea7c69;
+      }
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+    }
+    .total-price {
+      color: #fff;
+      font-size: 16px;
+      margin: 0 auto;
+    }
+  }
+  .dish-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    .order-note-input {
+      width: 297px;
+      cursor: pointer;
+      padding: 11px 14px;
+      border-radius: 8px;
+      color: #E0E6E9;
+      background: #2D303E;
+      border: 1px solid #393C49;
+      margin-left: 1px;
+      outline: none;
+      &:hover, &:focus {
+        border-color: #ea7c69;
+      }
+      &::placeholder {
+        color: #889898;
+      }
+    }
+    .delete-btn {
+      padding: 11px 13px 9px;
+      margin-left: auto;
+      border-radius: 8px;
+      border: 1.2px solid #EA7C69;
+      svg {
+        fill: #ea7c69;
+      }
+      &:hover, &:focus {
+        border-color: #FF7CA3;
+        svg {
+          fill: #FF7CA3;
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,7 @@
+// Components
+import OrderDish from '../../../components/OrderDish/OrderDish'
 // Data
-
+import { dishesList } from '../../../assets/data/data'
 
 // SCSS
 import './OrdersSidebar.scss'
@@ -24,7 +26,18 @@ const OrdersSidebar = ({ changeSidebar, setChangeSidebar }) => {
             <h3 className="qty">Qty</h3>
             <h3 className="price">Price</h3>
           </div>
-          <div className="orders-list"></div>
+          <div className="orders-list">
+            {dishesList.map(dish => (
+              <OrderDish
+                id={dish.id}
+                key={dish.id}
+                cost={dish.cost}
+                title={dish.title}
+                foodImg={dish.img}
+                available={dish.available}
+              />
+            ))}
+          </div>
           <div className="orders-footer">
             <div className="discount">
               <h4>Discount</h4>

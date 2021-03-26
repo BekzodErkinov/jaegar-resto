@@ -1,11 +1,11 @@
 .orders-sidebar {
   padding: 24px;
   #orders-form {
-    min-height: 100vh;
+    min-height: 119vh;
     display: flex;
     align-items: stretch;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     // Orders Form Header
     .orders-form-header {
       .sidebar-title {
@@ -16,7 +16,6 @@
         .service-type-btn {
           padding: 7px;
           margin-right: 8px;
-          background: #1F1D2B;
           border: 1px solid #393C49;
           border-radius: 8px;
           transition: all 0.3s ease;
@@ -31,12 +30,6 @@
     }
     // Orders Form Main
     .orders-form-main {
-      &::-webkit-scrollbar {
-        width: 0 !important;
-        height: 0;
-        display: none !important;
-        background: transparent;
-      }
       .orders-list-caption {
         display: flex;
         align-items: center;
@@ -53,18 +46,39 @@
         }
       }
       .orders-list {
-        height: 430px;
+        height: 485px;
         overflow-y: auto;
-        // outline: 1px solid royalblue;
+        overflow-x: hidden;
+        &::-webkit-scrollbar {
+          width: 0 !important;
+          height: 0;
+          display: none !important;
+          background: transparent;
+        }
       }
       .orders-footer {
-        background: #000;
+        padding-top: 24px;
+        border-top: 1px solid #393C49;
+        .discount, .sub-total {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          h4 {
+            color: #abbbc2;
+            font-weight: 400;
+          }
+          span {
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
+        .discount {
+          margin-bottom: 16px;
+        }
       }
-      // *{outline: 1px solid darkslateblue}
     }
     // Orders Form Footer
     .orders-form-footer {
-      margin-top: auto;
       .payment-btn {
         width: 100%;
         padding: 14px;
