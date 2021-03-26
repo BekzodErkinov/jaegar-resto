@@ -22,7 +22,7 @@ const PaymentSidebar = ({ changeSidebar, setChangeSidebar }) => {
               className="payment-card-label" >
               {<CreditCardIcon />}
               <h4>Credit Card</h4>
-              <input type="radio" name="card" id="payment-credit-card" checked required />
+              <input type="radio" name="card" id="payment-credit-card" required />
             </label>
             <label
               htmlFor="payment-paypal"
@@ -49,7 +49,7 @@ const PaymentSidebar = ({ changeSidebar, setChangeSidebar }) => {
             htmlFor="card-number"
             className="payment-label card-number" >
             <span>Card Number</span>
-            <input type="number" name="card_number" id="card-number" min="16" max="16" placeholder="1234 5678 9012 3456" required />
+            <input type="number" name="card_number" id="card-number" placeholder="1234 5678 9012 3456" required />
           </label>
           <div className="card-foot">
             <label
@@ -68,7 +68,7 @@ const PaymentSidebar = ({ changeSidebar, setChangeSidebar }) => {
         </div>
         {/* Payment Footer */}
         <div className="payment-foot">
-          <div className="additional-input">
+          <div className="additional-inputs">
             <label
               htmlFor="order-type"
               className="payment-label order-type" >
@@ -83,12 +83,12 @@ const PaymentSidebar = ({ changeSidebar, setChangeSidebar }) => {
               htmlFor="table-no"
               className="payment-label table-no" >
               <h4>Table no.</h4>
-              <input type="number" name="card_table_no" id="table-no" required />
+              <input type="number" name="card_table_no" id="table-no" placeholder="140" required />
             </label>
           </div>
           <div className="buttons">
             <button
-              className={`cancel-btn`}
+              className="cancel-btn"
               changeSidebar={changeSidebar === 'Orders Sidebar'}
               onClick={() => setChangeSidebar('Orders Sidebar')}
               >

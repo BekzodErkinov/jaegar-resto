@@ -3,7 +3,7 @@ import './Settings.scss'
 
 const Settings = () => {
   return (
-    <div>
+    <div className="settings-page">
       <h1>Settings</h1>
     </div>
   )
