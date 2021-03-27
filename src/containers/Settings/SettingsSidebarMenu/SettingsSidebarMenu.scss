@@ -1,0 +1,13 @@
+.settings__sidebar-menu {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #1f1d2b;
+  a {
+    width: 100%;
+  }
+}

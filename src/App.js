@@ -5,8 +5,11 @@ import {
   Route
 } from 'react-router-dom'
 
-import Sidebar from './containers/Sidebar/Sidebar'
-
+// Containers
+import {
+  Sidebar
+} from './containers/index'
+// Pages
 import {
   Home,
   Message,
@@ -31,7 +34,7 @@ function App() {
             <Route exact path="/message" component={Message} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/discount" component={Discount} />
-            <Route exact path="/settings" component={Settings} />
+            <Route exact path="/settings/:setting_menu" component={Settings} />
             <Route exact path="/dashboard" component={Dashboard} />
             <Route exact path="/notification" component={Notification} />
           </Switch>

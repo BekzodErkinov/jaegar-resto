@@ -62,7 +62,7 @@ const Sidebar = ({ activePage, setActivePage }) => {
           onClick={() => setActivePage('notification')}
         />
       </Link>
-      <Link to="/settings">
+      <Link to="/settings/products-management">
         <SidebarBtn
           icon={<SettingsIcon/>}
           title="Settings"

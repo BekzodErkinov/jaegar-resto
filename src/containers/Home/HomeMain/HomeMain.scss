@@ -1,0 +1,16 @@
+.home__main {
+  .coming-soon {
+    width: 500px;
+    margin: 40px auto;
+    text-align: center;
+    h1 {
+      margin: 30px 0 10px;
+    }
+    img {
+      width: 400px;
+      height: 400px;
+      margin: 0 auto;
+      object-fit: cover;
+    }
+  }
+}

@@ -29,7 +29,9 @@
         border-radius: 8px;
         background: #2D303E;
         border: 2px solid #393C49;
+        text-shadow: 0 0 2px #222;
         outline: none;
+        -webkit-appearance: none;
         &:hover {
           border-color: #d88f82;
         }

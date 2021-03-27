@@ -12,14 +12,41 @@ const HomeMain = () => {
 
   return (
     <div className="home__main">
-      <FoodMenu activePage={activePage} setActivePage={setActivePage} />
+      <div className="container">
+        <FoodMenu activePage={activePage} setActivePage={setActivePage} />
 
-      {activePage === 'Hot Dishes' && (<DishesList/>)}
-      {activePage === 'Cold Dishes' && (<h2>Cold Dishes</h2>)}
-      {activePage === 'Soup' && (<h2>Soup</h2>)}
-      {activePage === 'Grill' && (<h2>Grill</h2>)}
-      {activePage === 'Appetizer' && (<h2>Appetizer</h2>)}
-      {activePage === 'Desert' && (<h2>Desert</h2>)}
+        {activePage === 'Hot Dishes' && (<DishesList/>)}
+        {activePage === 'Cold Dishes' && (
+          <div className="coming-soon">
+            <h1>Cold Dishes</h1>
+            <img width="400" height="400" src="http://www.fnasafety.com/wp-content/uploads/2016/04/ComingSoon2-fnasafety.png" alt="Coming Soon!" />
+        </div>
+        )}
+        {activePage === 'Soup' && (
+          <div className="coming-soon">
+            <h1>Soup</h1>
+            <img width="400" height="400" src="http://www.fnasafety.com/wp-content/uploads/2016/04/ComingSoon2-fnasafety.png" alt="Coming Soon!" />
+          </div>
+        )}
+        {activePage === 'Grill' && (
+          <div className="coming-soon">
+            <h1>Grill</h1>
+            <img width="400" height="400" src="http://www.fnasafety.com/wp-content/uploads/2016/04/ComingSoon2-fnasafety.png" alt="Coming Soon!" />
+          </div>
+        )}
+        {activePage === 'Appetizer' && (
+          <div className="coming-soon">
+            <h1>Appetizer</h1>
+            <img width="400" height="400" src="http://www.fnasafety.com/wp-content/uploads/2016/04/ComingSoon2-fnasafety.png" alt="Coming Soon!" />
+          </div>
+        )}
+        {activePage === 'Desert' && (
+          <div className="coming-soon">
+            <h1>Desert</h1>
+            <img width="400" height="400" src="http://www.fnasafety.com/wp-content/uploads/2016/04/ComingSoon2-fnasafety.png" alt="Coming Soon!" />
+          </div>
+        )}
+      </div>
     </div>
   )
 }

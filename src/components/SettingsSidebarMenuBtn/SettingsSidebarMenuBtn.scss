@@ -1,0 +1,59 @@
+.settings__sidebar-menu-btn {
+  // Variables
+  $duration: 0.4s;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  text-align: left;
+  padding: 24px 0 24px 24px;
+  transition: all $duration ease;
+  &::after {
+    width: 4px;
+    height: 39px;
+    border-radius: 30px;
+    background: transparent;
+    transition: all $duration ease;
+    content: '';
+  }
+  &:hover, &.active {
+    background: rgba(234, 124, 105, 0.26);
+    &::after {
+      background: #EA7C69;
+    }
+    svg {
+      fill: #EA7C69;
+    }
+    .lead h3 {
+      color: #EA7C69;
+    }
+  }
+
+  svg {
+    fill: #ABBBC2;
+    transition: all $duration ease;
+  }
+  .lead {
+    width: 190px;
+    height: 39px;
+    display: block;
+    margin: 0 auto 0 8px;
+    h3, h4 {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      transition: all $duration ease;
+    }
+    h3 {
+      font-size: 15px;
+      margin: 0 0 3px;
+      font-weight: 500;
+    }
+    h4 {
+      color: #abbbc2;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+}

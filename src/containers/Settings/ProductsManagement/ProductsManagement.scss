@@ -1,0 +1,33 @@
+.products-management {
+  &-lead {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .manage-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 8px;
+      border: 1px solid #393C49;
+      svg {
+        fill: #fff;
+        margin-right: 8px;
+      }
+    }
+  }
+  .food-menu {
+    &-btn {
+      &:first-child {
+        margin-left: 14px;
+      }
+    }
+  }
+}
