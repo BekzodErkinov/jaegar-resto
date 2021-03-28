@@ -20,7 +20,7 @@ const HomeMain = () => {
           <div className="coming-soon">
             <h1>Cold Dishes</h1>
             <img width="400" height="400" src="http://www.fnasafety.com/wp-content/uploads/2016/04/ComingSoon2-fnasafety.png" alt="Coming Soon!" />
-        </div>
+          </div>
         )}
         {activePage === 'Soup' && (
           <div className="coming-soon">

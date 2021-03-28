@@ -1,0 +1,31 @@
+.add-new-dish-btn {
+  width: 190px;
+  min-height: 299px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 12px 18px;
+  overflow: hidden;
+  color: #ea7c69;
+  border-radius: 8px;
+  border: 1px dashed #ea7c69;
+  transition: all 0.3s ease;
+  &:hover {
+    color: #da5f49;
+    border-color: #da5f49;
+    background: rgba(234, 124, 105, 0.26);
+    .btn-title {
+      color: #da5f49;
+    }
+  }
+  .plus-sign {
+    font-size: 35px;
+    margin-bottom: 8px;
+  }
+  .btn-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ea7c69;
+  }
+}

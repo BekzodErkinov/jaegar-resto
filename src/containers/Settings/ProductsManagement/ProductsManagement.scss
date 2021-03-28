@@ -23,10 +23,12 @@
       }
     }
   }
-  .food-menu {
-    &-btn {
-      &:first-child {
-        margin-left: 14px;
+  &-main {
+    .food-menu {
+      &-btn {
+        &:first-child {
+          margin-left: 14px;
+        }
       }
     }
   }

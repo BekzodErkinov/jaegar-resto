@@ -1,19 +1,42 @@
--src
+|-src
   |─assets
-  |  |-Icons
-  |  |-Images
-  |  └─styles
+  |   |-data
+  |   |-Icons
+  |   |-Images
+  |   └─styles
   |─components
-  |   |-
-  |   |-
-  |   └─
+  |   |-DishCardBtn
+  |   |-FoodMenuBtn
+  |   |-OrderDish
+  |   |-SettingsSidebarMenuBtn
+  |   └─SidebarBtn
   |-containers
-  |   |-
-  |   └─
+  |    |-DishesList
+  |    |-FoodMenu
+  |    |-Home
+  |    |   |-HomeHeader
+  |    |   |-HomeMain
+  |    |   |-OrdersSidebar
+  |    |   └─PaymentSidebar
+  |    |-RightsSidebar
+  |    |-Settings
+  |    |   |-AboutUs
+  |    |   |-Appearance
+  |    |   |-Notifications
+  |    |   |-ProductsManagement
+  |    |   |-Security
+  |    |   |-SettingsSidebarMenu
+  |    |   └─YourRestaurant
+  |    |-Sidebar
+  |    └─index.js
   |-pages
-  |   |-
-  |   └─
-  |
-  |
+  |    |-Dashboard
+  |    |-Discount
+  |    |-Home
+  |    |-Message
+  |    |-Notification
+  |    |-Register
+  |    |-Settings
+  |    └─index.js
   |-App.js
   └─index.js

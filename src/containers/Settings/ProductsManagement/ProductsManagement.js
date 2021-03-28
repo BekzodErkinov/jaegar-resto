@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 // Containers
 import FoodMenu from '../../../containers/FoodMenu/FoodMenu'
+import PMDishesList from '../PMDishesList/PMDishesList'
 // Icons
 import { OptionIcon } from '../../../assets/Icons/Icons'
 
@@ -13,15 +14,22 @@ const ProductsManagement = () => {
 
   return (
     <div className="products-management">
-      <div className="products-management-lead">
+      <header className="products-management-lead">
         <h1 className="title">Products Management</h1>
         <button className="manage-btn">
           {<OptionIcon/>}
           <span>Manage Categories</span>
         </button>
-      </div>
+      </header>
 
-      <FoodMenu active={activePage} setActivePage={setActivePage} />
+      <main className="products-management-main">
+          <FoodMenu activePage={activePage} setActivePage={setActivePage} />
+        <div className="container">
+          <PMDishesList
+            activePage={activePage.toLowerCase()}
+          />
+        </div>
+      </main>
     </div>
   )
 }
